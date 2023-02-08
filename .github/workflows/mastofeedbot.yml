@@ -1,5 +1,9 @@
 name: FeedBot
 on:
+  push:
+    branches: main
+  pull_request:
+    branches: main
   schedule:
     # This will run every five minutes. Alter it using https://crontab.guru/.
     - cron: '*/5 * * * *'  
