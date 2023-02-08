@@ -32,7 +32,7 @@ async function postItems(apiEndpoint: string, apiToken: string, rss: FeedEntry[]
       accessToken: apiToken
     });
   } catch (e) {
-    core.setFailed(`Failed to authenticate with Mastodon: ${(<Error>e).message}`);
+    core.setFailed(`test：Failed to authenticate with Mastodon: ${(<Error>e).message}`);
     return;
   }
 
