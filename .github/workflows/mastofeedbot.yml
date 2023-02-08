@@ -23,9 +23,9 @@ jobs:
         uses: 'selfagency/mastofeedbot@v1'
         with:
           # This is the RSS feed you want to publish
-          rss-feed: https://www.githubstatus.com/history.rss
+          rss-feed: https://public.twreporter.org/rss/twreporter-rss.xml
           # This is your instance address
-          api-endpoint: https://mastodon.social
+          api-endpoint: https://liker.social
           # This is the secret you created earlier
           api-token: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           # This is a path to the cache file, using the above cache path
